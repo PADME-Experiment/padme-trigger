@@ -1,0 +1,59 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /eda/Xilinx/Vivado_HLS/2017.4/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto c2d1fe49525d42f5ac50f424f7cb4450 --incr --debug typical --relax --mt 8 -L fifo_generator_v13_2_1 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot e_behav xil_defaultlib.e xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.fsm_pkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_1.fifo_generator_v13_2_1_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.downscaler [\downscaler(ndownscale_factor=16...]
+Compiling architecture behav of entity xil_defaultlib.nzs_zs_selector [\nzs_zs_selector(ndownscale_fact...]
+Compiling architecture rtl of entity xil_defaultlib.shaper [\shaper(ndata=7,nwidth=2)\]
+Compiling architecture rtl of entity xil_defaultlib.masker [\masker(ndata=8)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm_counter [\fsm_counter(ncnt=32)\]
+Compiling architecture rtl of entity xil_defaultlib.timer [\timer(ncounter=32,ntimeout=32)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm_counter [\fsm_counter(ncnt=16)\]
+Compiling architecture behav of entity xil_defaultlib.nzs_zs_shaper [\nzs_zs_shaper(nshape_factor=8,n...]
+Compiling architecture behav of entity xil_defaultlib.counter [\counter(n_counter=32)\]
+Compiling architecture behav of entity xil_defaultlib.window_generator [\window_generator(nrun_window=64...]
+Compiling architecture rtl of entity xil_defaultlib.daq_manager [\daq_manager(nbusy=5,nbusy_count...]
+Compiling architecture behav of entity xil_defaultlib.window_generator [\window_generator(nrun_window=8)...]
+Compiling architecture behav of entity xil_defaultlib.trig_time_stamp [\trig_time_stamp(ntrig_in=8,ntri...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.reset_builtin [\reset_builtin(c_has_int_clk=0)\]
+Compiling architecture ff36_internal_vhdl_v of entity unisim.FF36_INTERNAL_VHDL [\FF36_INTERNAL_VHDL(almost_full_...]
+Compiling architecture fifo36e1_v of entity unisim.FIFO36E1 [\FIFO36E1(almost_full_offset="00...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.builtin_prim_v6 [\builtin_prim_v6(c_family="7SERI...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.builtin_extdepth_v6 [\builtin_extdepth_v6(c_family="7...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.builtin_top_v6 [\builtin_top_v6(c_family="7SERIE...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.input_blk [\input_blk(c_din_width=64,c_pktf...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.output_blk [\output_blk(c_dout_width=64,c_pk...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.fifo_generator_v13_2_1_builtin [\fifo_generator_v13_2_1_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_1.fifo_generator_v13_2_1_synth [\fifo_generator_v13_2_1_synth(c_...]
+Compiling module fifo_generator_v13_2_1.fifo_generator_v13_2_1(C_COMMON_...
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture arch_imp of entity xil_defaultlib.axi4lite_reg [\axi4lite_reg(n_register=32,n_rw...]
+Compiling architecture behavioral of entity xil_defaultlib.downscaler [\downscaler(ndownscale_factor=12...]
+Compiling architecture behave of entity xil_defaultlib.corr_trigger [\corr_trigger(nwidth_in=16)\]
+Compiling architecture rtl of entity xil_defaultlib.user_logic [\user_logic(fclock=200,s_axi_add...]
+Compiling architecture aa of entity xil_defaultlib.e
+Built simulation snapshot e_behav

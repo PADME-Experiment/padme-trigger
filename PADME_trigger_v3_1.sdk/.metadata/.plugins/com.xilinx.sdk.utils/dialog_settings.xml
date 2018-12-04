@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3/bootimage" key="bootgen_files_selection"/>
+	<item value="/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3_FSBL/Debug" key="zynq_flash_files_selection"/>
+	<item value="/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3/bootimage" key="last_stored_selection"/>
+</section>

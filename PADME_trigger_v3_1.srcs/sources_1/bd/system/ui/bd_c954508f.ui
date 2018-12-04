@@ -1,0 +1,20 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 20 -defaultsOSRD
+preplace port IIC_0_0 -pg 1 -y 80 -defaultsOSRD
+preplace port ACLK -pg 1 -y 20 -defaultsOSRD
+preplace port IIC_1_0 -pg 1 -y 100 -defaultsOSRD
+preplace port M00_AXI_0 -pg 1 -y 120 -defaultsOSRD
+preplace port LOCKED -pg 1 -y 40 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 60 -defaultsOSRD
+preplace port FCLK_CLK1_MHZ -pg 1 -y 40 -defaultsOSRD
+preplace portBus RST -pg 1 -y 140 -defaultsOSRD
+preplace portBus aresetn -pg 1 -y 160 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 310 -defaultsOSRD
+levelinfo -pg 1 0 220 440 -top 0 -bot 400
+",
+}
+

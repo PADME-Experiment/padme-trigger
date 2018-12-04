@@ -1,0 +1,62 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 8193
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 8192 WIDTH = 4 C_RD_PRIM_WIDTH = 4 C_RD_PRIM_DEPTH = 8192 DEEP = 1 WIDE = 16
+Time: 0 ps  Iteration: 0
+Note: -- Write 1 @ RW Reg 0 (Reset LOGIC):
+Time: 1027500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 0: 1
+Time: 1052500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note: -- Write 1 @ RW Reg 0 (Reset LOGIC):
+Time: 1072500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 16: 19088743
+Time: 1097500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 17: -1985229329
+Time: 1122500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 30: 0
+Time: 1147500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 31: 16777216
+Time: 1172500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 30: 10207
+Time: 101252500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 31: 33620224
+Time: 101277500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 30: 10207
+Time: 101302500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 31: 50397440
+Time: 101327500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 30: 10207
+Time: 101352500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
+Note:    Read Reg 31: 50397440
+Time: 101377500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd

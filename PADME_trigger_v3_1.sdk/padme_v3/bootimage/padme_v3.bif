@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = MCS
+the_ROM_image:
+{
+	[bootloader]/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3_FSBL/Debug/padme_v3_FSBL.elf
+	/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/top_hw_platform_0/top.bit
+	/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3/Debug/padme_v3.elf
+}

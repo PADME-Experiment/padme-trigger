@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/axi4lite_reg.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/corr_trigger.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/counter.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/daq_manager.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/downscaler.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/masker.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/nzs_zs_selector.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/trig_time_stamp.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/trigger_logic.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/user_logic.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/window_generator.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/nzs_zs_shaper.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/shaper.vhd" \
+"../../../../PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/timer.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

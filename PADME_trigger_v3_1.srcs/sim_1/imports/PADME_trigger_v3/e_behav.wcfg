@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="e_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="e" />
+            <top_module name="fsm_pkg" />
+            <top_module name="glbl" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="101092500000fs"></ZoomStartTime>
+      <ZoomEndTime time="101362500001fs"></ZoomEndTime>
+      <Cursor1Time time="101332500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="269"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="264" />
+   <wave_markers>
+      <marker label="" time="339174444000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/e/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/trig_in">
+      <obj_property name="ElementShortName">trig_in[5:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_in[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/busy_in">
+      <obj_property name="ElementShortName">busy_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/busy_out">
+      <obj_property name="ElementShortName">busy_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/trig_out">
+      <obj_property name="ElementShortName">trig_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/shutter_out">
+      <obj_property name="ElementShortName">shutter_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">shutter_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_ACLK">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_ARESETN">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_AWADDR">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_AWPROT">
+      <obj_property name="ElementShortName">S_AXI_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_AWVALID">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_AWREADY">
+      <obj_property name="ElementShortName">S_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_WDATA">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_WSTRB">
+      <obj_property name="ElementShortName">S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_WVALID">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_WREADY">
+      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_BRESP">
+      <obj_property name="ElementShortName">S_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_BVALID">
+      <obj_property name="ElementShortName">S_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_BREADY">
+      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_ARADDR">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_ARPROT">
+      <obj_property name="ElementShortName">S_AXI_ARPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARPROT[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_ARVALID">
+      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_ARREADY">
+      <obj_property name="ElementShortName">S_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_RDATA">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/S_AXI_RRESP">
+      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_RVALID">
+      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/S_AXI_RREADY">
+      <obj_property name="ElementShortName">S_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/axi_rx_data">
+      <obj_property name="ElementShortName">axi_rx_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_rx_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/axi_rx_dv">
+      <obj_property name="ElementShortName">axi_rx_dv</obj_property>
+      <obj_property name="ObjectShortName">axi_rx_dv</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/fclock">
+      <obj_property name="ElementShortName">fclock</obj_property>
+      <obj_property name="ObjectShortName">fclock</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Ntrig_in">
+      <obj_property name="ElementShortName">Ntrig_in</obj_property>
+      <obj_property name="ObjectShortName">Ntrig_in</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Ntrig_out">
+      <obj_property name="ElementShortName">Ntrig_out</obj_property>
+      <obj_property name="ObjectShortName">Ntrig_out</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Nshaper_width">
+      <obj_property name="ElementShortName">Nshaper_width</obj_property>
+      <obj_property name="ObjectShortName">Nshaper_width</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Nbusy_in">
+      <obj_property name="ElementShortName">Nbusy_in</obj_property>
+      <obj_property name="ObjectShortName">Nbusy_in</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Nbusy_out">
+      <obj_property name="ElementShortName">Nbusy_out</obj_property>
+      <obj_property name="ObjectShortName">Nbusy_out</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/Nshutter_out">
+      <obj_property name="ElementShortName">Nshutter_out</obj_property>
+      <obj_property name="ObjectShortName">Nshutter_out</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/CR_N_REGISTER">
+      <obj_property name="ElementShortName">CR_N_REGISTER</obj_property>
+      <obj_property name="ObjectShortName">CR_N_REGISTER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/CR_N_RW_REGISTER">
+      <obj_property name="ElementShortName">CR_N_RW_REGISTER</obj_property>
+      <obj_property name="ObjectShortName">CR_N_RW_REGISTER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/CR_N_SC_REGISTER">
+      <obj_property name="ElementShortName">CR_N_SC_REGISTER</obj_property>
+      <obj_property name="ObjectShortName">CR_N_SC_REGISTER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/CR_N_FF_REGISTER">
+      <obj_property name="ElementShortName">CR_N_FF_REGISTER</obj_property>
+      <obj_property name="ObjectShortName">CR_N_FF_REGISTER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/S_AXI_DATA_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_DATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_DATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/S_AXI_ADDR_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_ADDR_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ADDR_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/axi_clk_period">
+      <obj_property name="ElementShortName">axi_clk_period</obj_property>
+      <obj_property name="ObjectShortName">axi_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider45" type="divider">
+      <obj_property name="label">USER_LOGIC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/clk_ps_1MHz_in">
+      <obj_property name="ElementShortName">clk_ps_1MHz_in</obj_property>
+      <obj_property name="ObjectShortName">clk_ps_1MHz_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rst_in">
+      <obj_property name="ElementShortName">rst_in</obj_property>
+      <obj_property name="ObjectShortName">rst_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_in">
+      <obj_property name="ElementShortName">trig_in[5:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_in[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_in">
+      <obj_property name="ElementShortName">busy_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_out">
+      <obj_property name="ElementShortName">trig_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_out">
+      <obj_property name="ElementShortName">busy_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/shutter_out">
+      <obj_property name="ElementShortName">shutter_out[1:0]</obj_property>
+      <obj_property name="ObjectShortName">shutter_out[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_redge">
+      <obj_property name="ElementShortName">trig_redge[6:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_redge[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_mask_in_v">
+      <obj_property name="ElementShortName">trig_mask_in_v[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_mask_in_v[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_mask_int">
+      <obj_property name="ElementShortName">trig_mask_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_mask_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_mask_veto">
+      <obj_property name="ElementShortName">trig_mask_veto[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_mask_veto[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_masked">
+      <obj_property name="ElementShortName">trig_masked[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_masked[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_vect">
+      <obj_property name="ElementShortName">trig_vect[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_vect[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_dwnscl">
+      <obj_property name="ElementShortName">trig_dwnscl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_dwnscl[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_nzs">
+      <obj_property name="ElementShortName">trig_nzs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_nzs[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_zs">
+      <obj_property name="ElementShortName">trig_zs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_zs[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_reset">
+      <obj_property name="ElementShortName">timer_reset</obj_property>
+      <obj_property name="ObjectShortName">timer_reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig">
+      <obj_property name="ElementShortName">trig[2:0]</obj_property>
+      <obj_property name="ObjectShortName">trig[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/trig_type">
+      <obj_property name="ElementShortName">trig_type</obj_property>
+      <obj_property name="ObjectShortName">trig_type</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_map">
+      <obj_property name="ElementShortName">trig_map[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_map[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/trig_to_delay">
+      <obj_property name="ElementShortName">trig_to_delay</obj_property>
+      <obj_property name="ObjectShortName">trig_to_delay</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/busy">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_int">
+      <obj_property name="ElementShortName">busy_int[4:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_int[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/run">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/run_reg">
+      <obj_property name="ElementShortName">run_reg</obj_property>
+      <obj_property name="ObjectShortName">run_reg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/time_stamp">
+      <obj_property name="ElementShortName">time_stamp[63:0]</obj_property>
+      <obj_property name="ObjectShortName">time_stamp[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/time_stamp_v">
+      <obj_property name="ElementShortName">time_stamp_v</obj_property>
+      <obj_property name="ObjectShortName">time_stamp_v</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/fifo_wr_en">
+      <obj_property name="ElementShortName">fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/fifo_din">
+      <obj_property name="ElementShortName">fifo_din[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_din[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/fifo_rd_en">
+      <obj_property name="ElementShortName">fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/fifo_data_out">
+      <obj_property name="ElementShortName">fifo_data_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_data_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/fifo_full">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/fifo_empty">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/partially_open">
+      <obj_property name="ElementShortName">partially_open[7:0]</obj_property>
+      <obj_property name="ObjectShortName">partially_open[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/dwnscl_fact">
+      <obj_property name="ElementShortName">dwnscl_fact[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">dwnscl_fact[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_dwnscl_fact">
+      <obj_property name="ElementShortName">nzs_dwnscl_fact[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">nzs_dwnscl_fact[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/pulse1us_in">
+      <obj_property name="ElementShortName">pulse1us_in</obj_property>
+      <obj_property name="ObjectShortName">pulse1us_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rand_trig">
+      <obj_property name="ElementShortName">rand_trig</obj_property>
+      <obj_property name="ObjectShortName">rand_trig</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rand_trig_dwns">
+      <obj_property name="ElementShortName">rand_trig_dwns</obj_property>
+      <obj_property name="ObjectShortName">rand_trig_dwns</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rand_trig_en">
+      <obj_property name="ElementShortName">rand_trig_en</obj_property>
+      <obj_property name="ObjectShortName">rand_trig_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/rand_trig_period">
+      <obj_property name="ElementShortName">rand_trig_period[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_trig_period[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/rand_trig_dwnscalef">
+      <obj_property name="ElementShortName">rand_trig_dwnscalef[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rand_trig_dwnscalef[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig">
+      <obj_property name="ElementShortName">corr_trig</obj_property>
+      <obj_property name="ObjectShortName">corr_trig</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_dwns">
+      <obj_property name="ElementShortName">corr_trig_dwns</obj_property>
+      <obj_property name="ObjectShortName">corr_trig_dwns</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_en">
+      <obj_property name="ElementShortName">corr_trig_en</obj_property>
+      <obj_property name="ObjectShortName">corr_trig_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/corr_trig_delay">
+      <obj_property name="ElementShortName">corr_trig_delay[15:0]</obj_property>
+      <obj_property name="ObjectShortName">corr_trig_delay[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/corr_trig_dwnscalef">
+      <obj_property name="ElementShortName">corr_trig_dwnscalef[7:0]</obj_property>
+      <obj_property name="ObjectShortName">corr_trig_dwnscalef[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/shutter">
+      <obj_property name="ElementShortName">shutter</obj_property>
+      <obj_property name="ObjectShortName">shutter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/tp3_shut_delay">
+      <obj_property name="ElementShortName">tp3_shut_delay[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tp3_shut_delay[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/tp3_shut_width">
+      <obj_property name="ElementShortName">tp3_shut_width[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tp3_shut_width[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/rw_def">
+      <obj_property name="ElementShortName">rw_def[479:0]</obj_property>
+      <obj_property name="ObjectShortName">rw_def[479:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/rw_reg">
+      <obj_property name="ElementShortName">rw_reg[479:0]</obj_property>
+      <obj_property name="ObjectShortName">rw_reg[479:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/sc_reg">
+      <obj_property name="ElementShortName">sc_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sc_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/ro_reg">
+      <obj_property name="ElementShortName">ro_reg[447:0]</obj_property>
+      <obj_property name="ObjectShortName">ro_reg[447:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/ff_req">
+      <obj_property name="ElementShortName">ff_req[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ff_req[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/ff_reg">
+      <obj_property name="ElementShortName">ff_reg[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ff_reg[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/rst_reg">
+      <obj_property name="ElementShortName">rst_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rst_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rst_fifo">
+      <obj_property name="ElementShortName">rst_fifo</obj_property>
+      <obj_property name="ObjectShortName">rst_fifo</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/rst_fifo_from_daq_man">
+      <obj_property name="ElementShortName">rst_fifo_from_daq_man</obj_property>
+      <obj_property name="ObjectShortName">rst_fifo_from_daq_man</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/fifo_is_rst">
+      <obj_property name="ElementShortName">fifo_is_rst</obj_property>
+      <obj_property name="ObjectShortName">fifo_is_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/shaper_width">
+      <obj_property name="ElementShortName">shaper_width[1:0]</obj_property>
+      <obj_property name="ObjectShortName">shaper_width[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_mask">
+      <obj_property name="ElementShortName">trig_mask[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_mask[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_mask">
+      <obj_property name="ElementShortName">busy_mask[4:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_mask[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_rst">
+      <obj_property name="ElementShortName">timer_rst</obj_property>
+      <obj_property name="ObjectShortName">timer_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_veto">
+      <obj_property name="ElementShortName">timer_veto</obj_property>
+      <obj_property name="ObjectShortName">timer_veto</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_threshold">
+      <obj_property name="ElementShortName">trig_threshold[2:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_threshold[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/run_width">
+      <obj_property name="ElementShortName">run_width[63:0]</obj_property>
+      <obj_property name="ObjectShortName">run_width[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/run_delay">
+      <obj_property name="ElementShortName">run_delay[63:0]</obj_property>
+      <obj_property name="ObjectShortName">run_delay[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_count">
+      <obj_property name="ElementShortName">timer_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timeout_count">
+      <obj_property name="ElementShortName">timeout_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/start_of_run">
+      <obj_property name="ElementShortName">start_of_run</obj_property>
+      <obj_property name="ObjectShortName">start_of_run</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/stop_of_run">
+      <obj_property name="ElementShortName">stop_of_run</obj_property>
+      <obj_property name="ObjectShortName">stop_of_run</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_counter_rst">
+      <obj_property name="ElementShortName">busy_counter_rst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_counter_rst[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/busy_counter">
+      <obj_property name="ElementShortName">busy_counter[159:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_counter[159:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_count_d">
+      <obj_property name="ElementShortName">timer_count_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_count_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timeout_count_d">
+      <obj_property name="ElementShortName">timeout_count_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout_count_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider336" type="divider">
+      <obj_property name="label">INPUT SHAPER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/trigger_shaper_i/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/trigger_shaper_i/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trigger_shaper_i/input">
+      <obj_property name="ElementShortName">input[6:0]</obj_property>
+      <obj_property name="ObjectShortName">input[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trigger_shaper_i/width_in">
+      <obj_property name="ElementShortName">width_in[1:0]</obj_property>
+      <obj_property name="ObjectShortName">width_in[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trigger_shaper_i/output">
+      <obj_property name="ElementShortName">output[6:0]</obj_property>
+      <obj_property name="ObjectShortName">output[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trigger_shaper_i/sampled_in">
+      <obj_property name="ElementShortName">sampled_in[5:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">sampled_in[5:0][6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trigger_shaper_i/async_rst">
+      <obj_property name="ElementShortName">async_rst[6:0]</obj_property>
+      <obj_property name="ObjectShortName">async_rst[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/trigger_shaper_i/Ndata">
+      <obj_property name="ElementShortName">Ndata</obj_property>
+      <obj_property name="ObjectShortName">Ndata</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/trigger_shaper_i/Nwidth">
+      <obj_property name="ElementShortName">Nwidth</obj_property>
+      <obj_property name="ObjectShortName">Nwidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider123" type="divider">
+      <obj_property name="label">DAQ</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/start_of_run_in">
+      <obj_property name="ElementShortName">start_of_run_in</obj_property>
+      <obj_property name="ObjectShortName">start_of_run_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/busy_in">
+      <obj_property name="ElementShortName">busy_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/busy_counter_rst_in">
+      <obj_property name="ElementShortName">busy_counter_rst_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_counter_rst_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/run_width_in">
+      <obj_property name="ElementShortName">run_width_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">run_width_in[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/run_delay_in">
+      <obj_property name="ElementShortName">run_delay_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">run_delay_in[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/run_out">
+      <obj_property name="ElementShortName">run_out</obj_property>
+      <obj_property name="ObjectShortName">run_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/busy_out">
+      <obj_property name="ElementShortName">busy_out</obj_property>
+      <obj_property name="ObjectShortName">busy_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/busy_counter_out">
+      <obj_property name="ElementShortName">busy_counter_out[159:0]</obj_property>
+      <obj_property name="ObjectShortName">busy_counter_out[159:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/busy">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window">
+      <obj_property name="ElementShortName">window</obj_property>
+      <obj_property name="ObjectShortName">window</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/counter_rst">
+      <obj_property name="ElementShortName">counter_rst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_rst[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/daq_manager_i/Nbusy">
+      <obj_property name="ElementShortName">Nbusy</obj_property>
+      <obj_property name="ObjectShortName">Nbusy</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/daq_manager_i/Nbusy_counter">
+      <obj_property name="ElementShortName">Nbusy_counter</obj_property>
+      <obj_property name="ObjectShortName">Nbusy_counter</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/daq_manager_i/Nrun_window">
+      <obj_property name="ElementShortName">Nrun_window</obj_property>
+      <obj_property name="ObjectShortName">Nrun_window</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider307" type="divider">
+      <obj_property name="label">WINDOW GEN</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window_generator_i/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window_generator_i/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/window_generator_i/width_in">
+      <obj_property name="ElementShortName">width_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">width_in[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/window_generator_i/delay_in">
+      <obj_property name="ElementShortName">delay_in[63:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_in[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window_generator_i/start_in">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window_generator_i/window_out">
+      <obj_property name="ElementShortName">window_out</obj_property>
+      <obj_property name="ObjectShortName">window_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/window_generator_i/count_d">
+      <obj_property name="ElementShortName">count_d[63:0]</obj_property>
+      <obj_property name="ObjectShortName">count_d[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/window_generator_i/count_w">
+      <obj_property name="ElementShortName">count_w[63:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/daq_manager_i/window_generator_i/width_r">
+      <obj_property name="ElementShortName">width_r[63:0]</obj_property>
+      <obj_property name="ObjectShortName">width_r[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/daq_manager_i/window_generator_i/window">
+      <obj_property name="ElementShortName">window</obj_property>
+      <obj_property name="ObjectShortName">window</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/daq_manager_i/window_generator_i/Nrun_window">
+      <obj_property name="ElementShortName">Nrun_window</obj_property>
+      <obj_property name="ObjectShortName">Nrun_window</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider614" type="divider">
+      <obj_property name="label">TIMER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_i/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_i/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_i/timer_count_in">
+      <obj_property name="ElementShortName">timer_count_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_count_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_i/timeout_count_in">
+      <obj_property name="ElementShortName">timeout_count_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timeout_count_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_i/start_in">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_i/done_out">
+      <obj_property name="ElementShortName">done_out</obj_property>
+      <obj_property name="ObjectShortName">done_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_i/count">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/timer_i/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_out">
+      <obj_property name="ElementShortName">trig_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_out[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/trig_in">
+      <obj_property name="ElementShortName">trig_in[5:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_in[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/timer_i/Ncounter">
+      <obj_property name="ElementShortName">Ncounter</obj_property>
+      <obj_property name="ObjectShortName">Ncounter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/timer_i/zeros">
+      <obj_property name="ElementShortName">zeros[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zeros[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider530" type="divider">
+      <obj_property name="label">AXI4LITECR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/Inst_ConfRegister/slv_reg">
+      <obj_property name="ElementShortName">slv_reg[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider199" type="divider">
+      <obj_property name="label">Shaper</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/veto_out">
+      <obj_property name="ElementShortName">veto_out</obj_property>
+      <obj_property name="ObjectShortName">veto_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/zs_width">
+      <obj_property name="ElementShortName">zs_width[7:0]</obj_property>
+      <obj_property name="ObjectShortName">zs_width[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/nzs_width">
+      <obj_property name="ElementShortName">nzs_width[7:0]</obj_property>
+      <obj_property name="ObjectShortName">nzs_width[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/zs_in">
+      <obj_property name="ElementShortName">zs_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">zs_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/nzs_in">
+      <obj_property name="ElementShortName">nzs_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">nzs_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/trig_out">
+      <obj_property name="ElementShortName">trig_out</obj_property>
+      <obj_property name="ObjectShortName">trig_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/trig_type">
+      <obj_property name="ElementShortName">trig_type</obj_property>
+      <obj_property name="ObjectShortName">trig_type</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/trig_map">
+      <obj_property name="ElementShortName">trig_map[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_map[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/cns">
+      <obj_property name="ElementShortName">cns</obj_property>
+      <obj_property name="ObjectShortName">cns</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/cvalue">
+      <obj_property name="ElementShortName">cvalue[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cvalue[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/cvalid">
+      <obj_property name="ElementShortName">cvalid</obj_property>
+      <obj_property name="ObjectShortName">cvalid</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/pstate">
+      <obj_property name="ElementShortName">pstate</obj_property>
+      <obj_property name="ObjectShortName">pstate</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/nstate">
+      <obj_property name="ElementShortName">nstate</obj_property>
+      <obj_property name="ObjectShortName">nstate</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/zs">
+      <obj_property name="ElementShortName">zs</obj_property>
+      <obj_property name="ObjectShortName">zs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/nzs">
+      <obj_property name="ElementShortName">nzs</obj_property>
+      <obj_property name="ObjectShortName">nzs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/trig_map_int">
+      <obj_property name="ElementShortName">trig_map_int[7:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_map_int[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/trig_type_int">
+      <obj_property name="ElementShortName">trig_type_int</obj_property>
+      <obj_property name="ObjectShortName">trig_type_int</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/Nshape_factor">
+      <obj_property name="ElementShortName">Nshape_factor</obj_property>
+      <obj_property name="ObjectShortName">Nshape_factor</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/Ntrig_in">
+      <obj_property name="ElementShortName">Ntrig_in</obj_property>
+      <obj_property name="ObjectShortName">Ntrig_in</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/N_fsm_counter">
+      <obj_property name="ElementShortName">N_fsm_counter</obj_property>
+      <obj_property name="ObjectShortName">N_fsm_counter</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/cns">
+      <obj_property name="ElementShortName">cns</obj_property>
+      <obj_property name="ObjectShortName">cns</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/cvalue">
+      <obj_property name="ElementShortName">cvalue[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cvalue[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/cvalid">
+      <obj_property name="ElementShortName">cvalid</obj_property>
+      <obj_property name="ObjectShortName">cvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/ccnt">
+      <obj_property name="ElementShortName">ccnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ccnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/cps">
+      <obj_property name="ElementShortName">cps</obj_property>
+      <obj_property name="ObjectShortName">cps</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/ccntr">
+      <obj_property name="ElementShortName">ccntr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ccntr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/nzs_zs_shape/fsm_cnt/Ncnt">
+      <obj_property name="ElementShortName">Ncnt</obj_property>
+      <obj_property name="ObjectShortName">Ncnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider270" type="divider">
+      <obj_property name="label">Shutter GEN</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/window_generator_i/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/window_generator_i/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/width_in">
+      <obj_property name="ElementShortName">width_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">width_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/delay_in">
+      <obj_property name="ElementShortName">delay_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/window_generator_i/start_in">
+      <obj_property name="ElementShortName">start_in</obj_property>
+      <obj_property name="ObjectShortName">start_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/window_generator_i/window_out">
+      <obj_property name="ElementShortName">window_out</obj_property>
+      <obj_property name="ObjectShortName">window_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/count_d">
+      <obj_property name="ElementShortName">count_d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">count_d[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/count_w">
+      <obj_property name="ElementShortName">count_w[7:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/width_r">
+      <obj_property name="ElementShortName">width_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">width_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/window_generator_i/window">
+      <obj_property name="ElementShortName">window</obj_property>
+      <obj_property name="ObjectShortName">window</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/window_generator_i/Nrun_window">
+      <obj_property name="ElementShortName">Nrun_window</obj_property>
+      <obj_property name="ObjectShortName">Nrun_window</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/window_generator_i/uno">
+      <obj_property name="ElementShortName">uno[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uno[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider296" type="divider">
+      <obj_property name="label">Corr trig</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/enable_in">
+      <obj_property name="ElementShortName">enable_in</obj_property>
+      <obj_property name="ObjectShortName">enable_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/trig_in">
+      <obj_property name="ElementShortName">trig_in</obj_property>
+      <obj_property name="ObjectShortName">trig_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/corr_trig_gen/delay_in">
+      <obj_property name="ElementShortName">delay_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/trig_out">
+      <obj_property name="ElementShortName">trig_out</obj_property>
+      <obj_property name="ObjectShortName">trig_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/corr_trig_gen/count">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/run">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/corr_trig_gen/Nwidth_in">
+      <obj_property name="ElementShortName">Nwidth_in</obj_property>
+      <obj_property name="ObjectShortName">Nwidth_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/corr_trig_gen/zeros">
+      <obj_property name="ElementShortName">zeros[15:0]</obj_property>
+      <obj_property name="ObjectShortName">zeros[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider308" type="divider">
+      <obj_property name="label">Corr trig Dwnsc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/downscale_factor_in">
+      <obj_property name="ElementShortName">downscale_factor_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">downscale_factor_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/data_in">
+      <obj_property name="ElementShortName">data_in</obj_property>
+      <obj_property name="ObjectShortName">data_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/data_out">
+      <obj_property name="ElementShortName">data_out</obj_property>
+      <obj_property name="ObjectShortName">data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/count">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/count_reg">
+      <obj_property name="ElementShortName">count_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/Ndownscale_factor">
+      <obj_property name="ElementShortName">Ndownscale_factor</obj_property>
+      <obj_property name="ObjectShortName">Ndownscale_factor</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(7)\/trig_downscaler/ones">
+      <obj_property name="ElementShortName">ones[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider319" type="divider">
+      <obj_property name="label">Corr trig ZS/NZS selector</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/nzs_downscale_factor_in">
+      <obj_property name="ElementShortName">nzs_downscale_factor_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nzs_downscale_factor_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/data_in">
+      <obj_property name="ElementShortName">data_in</obj_property>
+      <obj_property name="ObjectShortName">data_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/zs_out">
+      <obj_property name="ElementShortName">zs_out</obj_property>
+      <obj_property name="ObjectShortName">zs_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/nzs_out">
+      <obj_property name="ElementShortName">nzs_out</obj_property>
+      <obj_property name="ObjectShortName">nzs_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/count">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/count_reg">
+      <obj_property name="ElementShortName">count_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/Ndownscale_factor">
+      <obj_property name="ElementShortName">Ndownscale_factor</obj_property>
+      <obj_property name="ObjectShortName">Ndownscale_factor</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_zs_nzs_gen(7)\/nzs_zs_select/ones">
+      <obj_property name="ElementShortName">ones[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider362" type="divider">
+      <obj_property name="label">Uncorr trig Dwnsc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/downscale_factor_in">
+      <obj_property name="ElementShortName">downscale_factor_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">downscale_factor_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/data_in">
+      <obj_property name="ElementShortName">data_in</obj_property>
+      <obj_property name="ObjectShortName">data_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/data_out">
+      <obj_property name="ElementShortName">data_out</obj_property>
+      <obj_property name="ObjectShortName">data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/count">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/count_reg">
+      <obj_property name="ElementShortName">count_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/Ndownscale_factor">
+      <obj_property name="ElementShortName">Ndownscale_factor</obj_property>
+      <obj_property name="ObjectShortName">Ndownscale_factor</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/\trig_downscaler_gen(6)\/trig_downscaler/ones">
+      <obj_property name="ElementShortName">ones[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[15:0]</obj_property>
+   </wvobject>
+</wave_config>

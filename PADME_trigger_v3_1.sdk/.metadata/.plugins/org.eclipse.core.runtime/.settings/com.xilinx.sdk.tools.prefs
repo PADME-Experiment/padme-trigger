@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:heap-size=4096
+com.xilinx.sdk.linkgen.prefs.padme_v3\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.padme_v3\:stack-size=4096
+eclipse.preferences.version=1

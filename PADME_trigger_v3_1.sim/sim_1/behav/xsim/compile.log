@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/corr_trigger.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity corr_trigger
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/user_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity user_logic
