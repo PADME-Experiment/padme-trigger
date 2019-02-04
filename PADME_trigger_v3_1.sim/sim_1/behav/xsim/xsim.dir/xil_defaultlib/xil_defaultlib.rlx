@@ -3,7 +3,7 @@
 Dec 15 2017
 20:57:24
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,axi_protocol_checker_v2_0_1;axi_vip_v1_1_1;processing_system7_vip_v1_0_3;smartconnect_v1_0;xilinx_vip,,,,,,
-/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd,1542046115,vhdl,,,,e,,,,,,,,
+/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd,1544018822,vhdl,,,,e,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/axi4lite_reg.vhd,1524538248,vhdl,,,,axi4lite_reg,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/corr_trigger.vhd,1542046634,vhdl,,,,corr_trigger,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/counter.vhd,1520621178,vhdl,,,,counter,,,,,,,,
@@ -16,6 +16,6 @@ Dec 15 2017
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/timer.vhd,1541613804,vhdl2008,,,,timer,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/trig_time_stamp.vhd,1540295469,vhdl,,,,trig_time_stamp,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/trigger_logic.vhd,1537521236,vhdl,/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/nzs_zs_shaper.vhd;/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/timer.vhd,,,fsm_counter;fsm_pkg;trigger_logic,,,,,,,,
-/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/user_logic.vhd,1542273394,vhdl,,,,user_logic,,,,,,,,
+/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/user_logic.vhd,1544016748,vhdl,,,,user_logic,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/imports/sources_1/new/window_generator.vhd,1540545628,vhdl,,,,window_generator,,,,,,,,
 /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1521117092,verilog,,,,fifo_generator_0,,axi_protocol_checker_v2_0_1;axi_vip_v1_1_1;processing_system7_vip_v1_0_3;smartconnect_v1_0;xilinx_vip,../../../../PADME_trigger_v3_1.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog;../../../../PADME_trigger_v3_1.srcs/sources_1/bd/system/ipshared/1313/hdl;../../../../PADME_trigger_v3_1.srcs/sources_1/bd/system/ipshared/ec67/hdl;../../../../PADME_trigger_v3_1.srcs/sources_1/ip/clk_wiz_0;/eda/Xilinx/Vivado_HLS/2017.4/Vivado/2017.4/data/xilinx_vip/include,,,,,

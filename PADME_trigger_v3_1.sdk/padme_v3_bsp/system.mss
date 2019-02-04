@@ -233,16 +233,7 @@ BEGIN LIBRARY
  PARAMETER LIBRARY_NAME = lwip141
  PARAMETER LIBRARY_VER = 2.0
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
- PARAMETER icmp_debug = true
- PARAMETER igmp_debug = true
- PARAMETER ip_debug = true
- PARAMETER lwip_debug = true
- PARAMETER netif_debug = true
- PARAMETER pbuf_debug = true
  PARAMETER phy_link_speed = CONFIG_LINKSPEED100
- PARAMETER sys_debug = true
- PARAMETER tcp_debug = true
- PARAMETER udp_debug = true
 END
 
 

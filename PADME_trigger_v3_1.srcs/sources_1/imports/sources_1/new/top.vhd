@@ -196,6 +196,7 @@ port(
   clk                    : in  std_logic;
   clk_ps_1MHz_in         : in  std_logic;
   rst_in                 : in  std_logic;
+  sin_fb                 : in  std_logic;
   trig_in                : in  std_logic_vector (Ntrig_in-1 downto 0);
   busy_in                : in  std_logic_vector (Nbusy_in-1 downto 0);
   trig_out               : out std_logic_vector (Ntrig_out-1 downto 0);
@@ -244,6 +245,7 @@ signal locked            : std_logic;
 signal rst               : std_logic;
 signal trig_in           : std_logic_vector (Ntrig_in-1 downto 0);
 signal trig_in_remapped  : std_logic_vector (Ntrig_in-1 downto 0);
+signal sin_fb            : std_logic;
 signal busy_in           : std_logic_vector (Nbusy_in-1 downto 0);
 signal trig_out          : std_logic_vector (Ntrig_out-1 downto 0);
 signal busy_out          : std_logic_vector (Nbusy_out-1 downto 0);
@@ -393,6 +395,7 @@ port map(
   clk_ps_1MHz_in         => clk_ps_1MHz    ,
   rst_in                 => rst            ,
   trig_in                => trig_in_remapped        ,
+  sin_fb                 => sin_fb,
   busy_in                => busy_in        ,
   trig_out               => trig_out       ,
   busy_out               => busy_out       ,
@@ -460,7 +463,9 @@ g_trig_in: for i in 0 to Ntrig_in-1 generate
     IB => trig_in_n(i)
   );
 end generate;
-trig_in_remapped <= not (trig_in(4) & trig_in(5) & trig_in(2) & trig_in(3) & trig_in(0) & trig_in(1));
+--trig_in_remapped <= not (trig_in(4) & trig_in(5) & trig_in(2) & trig_in(3) & trig_in(0) & trig_in(1));
+trig_in_remapped <= not ('1' & trig_in(5) & trig_in(2) & trig_in(3) & trig_in(0) & trig_in(1));
+sin_fb           <= not trig_in(4);
 
 g_busy_in: for i in 0 to Nbusy_in-1 generate
   IBUFDS_inst_x : IBUFDS

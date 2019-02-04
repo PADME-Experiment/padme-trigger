@@ -37,6 +37,7 @@ port(
   clk_ps_1MHz_in         : in  std_logic;
   rst_in                 : in  std_logic;
   trig_in                : in  std_logic_vector (Ntrig_in-1 downto 0);
+  sin_fb                 : in  std_logic;
   busy_in                : in  std_logic_vector (Nbusy_in-1 downto 0);
   trig_out               : out std_logic_vector (Ntrig_out-1 downto 0);
   busy_out               : out std_logic_vector (Nbusy_out-1 downto 0);
@@ -106,6 +107,7 @@ constant axi_clk_period  : time := 10 ns;
 signal clk               : std_logic;
 signal clk_ps_1mhz       : std_logic;
 signal trig_in           : std_logic_vector (Ntrig_in-1 downto 0) := (others => '0');
+signal sin_fb            : std_logic := '0';
 signal busy_in           : std_logic_vector (Nbusy_in-1 downto 0) := (others => '0');
 signal trig_out          : std_logic_vector (Ntrig_out-1 downto 0);
 signal busy_out          : std_logic_vector (Nbusy_out-1 downto 0);
@@ -137,6 +139,8 @@ signal axi_rx_dv         : std_logic := '0';
 
 begin
 
+sin_fb <= not sin_fb when (busy_out(0)='1' and busy_out(0)'event) else sin_fb after 30 ns;
+
 uut: user_logic
 generic map(
   fclock                 => fclock          ,
@@ -157,6 +161,7 @@ port map(
   clk                    => clk          ,
   clk_ps_1MHz_in         => clk_ps_1mhz          ,
   rst_in                 => '0',
+  sin_fb                 => sin_fb,
   trig_in                => trig_in      ,
   busy_in                => busy_in      ,
   trig_out               => trig_out     ,
@@ -439,6 +444,20 @@ begin
   -- Start of run
   axi_write(0, 1);
   
+  wait for 10 us;
+  -- Stop of run
+  axi_write(0, 2);
+  wait for 10 us;
+  
+  -- Start of run
+  axi_write(0, 1);
+  
+  wait for 10 us;
+  -- Stop of run
+  axi_write(0, 2);
+  wait for 10 us;
+  
+  
 --  --Read fifo with data
 --  wait for 2 us;
 --  axi_read(30);
@@ -463,21 +482,21 @@ begin
   
   wait for 100 us;
   
-  --Read fifo with data
-  axi_read(30);
-  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
-  axi_read(31);
-  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
-  --Read fifo with data
-  axi_read(30);
-  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
-  axi_read(31);
-  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
-  --Read fifo with data
-  axi_read(30);
-  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
-  axi_read(31);
-  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  --Read fifo with data
+--  axi_read(30);
+--  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  axi_read(31);
+--  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  --Read fifo with data
+--  axi_read(30);
+--  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  axi_read(31);
+--  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  --Read fifo with data
+--  axi_read(30);
+--  report "   Read Reg 30: " & integer'image(to_integer(unsigned(axi_rx_data)));
+--  axi_read(31);
+--  report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
   
   wait for 10 us;
   

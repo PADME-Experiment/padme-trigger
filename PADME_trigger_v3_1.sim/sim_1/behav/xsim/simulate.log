@@ -48,15 +48,3 @@ Note:    Read Reg 30: 0
 Time: 1147500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
 Note:    Read Reg 31: 16777216
 Time: 1172500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 30: 10207
-Time: 101252500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 31: 33620224
-Time: 101277500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 30: 10207
-Time: 101302500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 31: 50397440
-Time: 101327500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 30: 10207
-Time: 101352500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd
-Note:    Read Reg 31: 50397440
-Time: 101377500 ps  Iteration: 2  Process: /e/axi_pr  File: /home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.srcs/sim_1/imports/PADME_trigger_v3/PADME_trigger_v3.srcs/sim_1/imports/new/tb.vhd

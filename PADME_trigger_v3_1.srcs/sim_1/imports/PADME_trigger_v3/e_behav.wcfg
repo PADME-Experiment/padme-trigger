@@ -13,15 +13,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="101092500000fs"></ZoomStartTime>
-      <ZoomEndTime time="101362500001fs"></ZoomEndTime>
-      <Cursor1Time time="101332500000fs"></Cursor1Time>
+      <ZoomStartTime time="11310100000fs"></ZoomStartTime>
+      <ZoomEndTime time="11418900001fs"></ZoomEndTime>
+      <Cursor1Time time="11257500000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="269"></NameColumnWidth>
-      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="264" />
+   <WVObjectSize size="271" />
    <wave_markers>
       <marker label="" time="339174444000" />
    </wave_markers>
@@ -40,10 +40,12 @@
    <wvobject type="array" fp_name="/e/busy_out">
       <obj_property name="ElementShortName">busy_out[1:0]</obj_property>
       <obj_property name="ObjectShortName">busy_out[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/e/trig_out">
       <obj_property name="ElementShortName">trig_out[2:0]</obj_property>
       <obj_property name="ObjectShortName">trig_out[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/e/shutter_out">
       <obj_property name="ElementShortName">shutter_out[1:0]</obj_property>
@@ -233,6 +235,34 @@
       <obj_property name="ElementShortName">busy_out[1:0]</obj_property>
       <obj_property name="ObjectShortName">busy_out[1:0]</obj_property>
    </wvobject>
+   <wvobject type="logic" fp_name="/e/busy_out[0]">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">[0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/run">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/sin_fb">
+      <obj_property name="ElementShortName">sin_fb</obj_property>
+      <obj_property name="ObjectShortName">sin_fb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/sin_fb_r">
+      <obj_property name="ElementShortName">sin_fb_r[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_fb_r[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/e/uut/sin_r">
+      <obj_property name="ElementShortName">sin_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/sin_int">
+      <obj_property name="ElementShortName">sin_int</obj_property>
+      <obj_property name="ObjectShortName">sin_int</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/e/uut/sin">
+      <obj_property name="ElementShortName">sin</obj_property>
+      <obj_property name="ObjectShortName">sin</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/e/uut/shutter_out">
       <obj_property name="ElementShortName">shutter_out[1:0]</obj_property>
       <obj_property name="ObjectShortName">shutter_out[1:0]</obj_property>
@@ -305,9 +335,9 @@
       <obj_property name="ElementShortName">run</obj_property>
       <obj_property name="ObjectShortName">run</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/e/uut/run_reg">
-      <obj_property name="ElementShortName">run_reg</obj_property>
-      <obj_property name="ObjectShortName">run_reg</obj_property>
+   <wvobject type="array" fp_name="/e/uut/run_reg">
+      <obj_property name="ElementShortName">run_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">run_reg[7:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/e/uut/time_stamp">
       <obj_property name="ElementShortName">time_stamp[63:0]</obj_property>
@@ -943,8 +973,8 @@
       <obj_property name="ObjectShortName">trig_out</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/e/uut/corr_trig_gen/count">
-      <obj_property name="ElementShortName">count[15:0]</obj_property>
-      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+      <obj_property name="ElementShortName">count[22:0]</obj_property>
+      <obj_property name="ObjectShortName">count[22:0]</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/e/uut/corr_trig_gen/run">
       <obj_property name="ElementShortName">run</obj_property>
@@ -955,8 +985,8 @@
       <obj_property name="ObjectShortName">Nwidth_in</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/e/uut/corr_trig_gen/zeros">
-      <obj_property name="ElementShortName">zeros[15:0]</obj_property>
-      <obj_property name="ObjectShortName">zeros[15:0]</obj_property>
+      <obj_property name="ElementShortName">zeros[22:0]</obj_property>
+      <obj_property name="ObjectShortName">zeros[22:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider308" type="divider">
       <obj_property name="label">Corr trig Dwnsc</obj_property>

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date             : Thu Nov 15 10:32:11 2018
+| Date             : Mon Feb  4 18:28:32 2019
 | Host             : selfcad2.lnf.infn.it running 64-bit Scientific Linux release 7.4 (Nitrogen)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.135        |
+| Total On-Chip Power (W)  | 2.133        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.997        |
+| Dynamic (W)              | 1.995        |
 | Device Static (W)        | 0.138        |
 | Total Off-Chip Power (W) | 0.009        |
 | Effective TJA (C/W)      | 11.5         |
@@ -53,24 +53,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.018 |       10 |       --- |             --- |
-| Slice Logic              |     0.004 |    10926 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     3370 |     17600 |           19.15 |
-|   CARRY4                 |    <0.001 |      438 |      4400 |            9.95 |
-|   Register               |    <0.001 |     5320 |     35200 |           15.11 |
-|   BUFG                   |    <0.001 |        6 |        32 |           18.75 |
+| Clocks                   |     0.017 |       10 |       --- |             --- |
+| Slice Logic              |     0.003 |    10770 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     3305 |     17600 |           18.78 |
+|   CARRY4                 |    <0.001 |      412 |      4400 |            9.36 |
+|   Register               |    <0.001 |     5258 |     35200 |           14.94 |
+|   BUFG                   |    <0.001 |        5 |        32 |           15.63 |
+|   LUT as Shift Register  |    <0.001 |      311 |      6000 |            5.18 |
 |   F7/F8 Muxes            |    <0.001 |      132 |     17600 |            0.75 |
-|   LUT as Shift Register  |    <0.001 |      312 |      6000 |            5.20 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
-|   Others                 |     0.000 |      701 |       --- |             --- |
-| Signals                  |     0.005 |     8201 |       --- |             --- |
+|   Others                 |     0.000 |      705 |       --- |             --- |
+| Signals                  |     0.005 |     8073 |       --- |             --- |
 | Block RAM                |     0.022 |       24 |        60 |           40.00 |
 | PLL                      |     0.101 |        1 |         2 |           50.00 |
 | DSPs                     |    <0.001 |        1 |        80 |            1.25 |
 | I/O                      |     0.316 |       42 |       100 |           42.00 |
 | PS7                      |     1.530 |        1 |       --- |             --- |
 | Static Power             |     0.138 |          |           |                 |
-| Total                    |     2.135 |          |           |                 |
+| Total                    |     2.133 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.070 |       0.061 |      0.009 |
+| Vccint    |       1.000 |     0.069 |       0.059 |      0.009 |
 | Vccaux    |       1.800 |     0.077 |       0.068 |      0.009 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.117 |       0.116 |      0.001 |
@@ -163,8 +163,8 @@ Table of Contents
 +------------------------------------------------------------------------------------+-----------+
 | Name                                                                               | Power (W) |
 +------------------------------------------------------------------------------------+-----------+
-| top                                                                                |     1.997 |
-|   System_inst                                                                      |     1.538 |
+| top                                                                                |     1.995 |
+|   System_inst                                                                      |     1.537 |
 |     IIC_0_0_scl_iobuf                                                              |    <0.001 |
 |     IIC_0_0_sda_iobuf                                                              |    <0.001 |
 |     IIC_1_0_scl_iobuf                                                              |    <0.001 |
@@ -636,10 +636,10 @@ Table of Contents
 |                     u_srlC                                                         |    <0.001 |
 |                     u_srlD                                                         |    <0.001 |
 |         xsdb_memory_read_inst                                                      |    <0.001 |
-|   user_logic_i                                                                     |     0.028 |
-|     Inst_ConfRegister                                                              |     0.004 |
+|   user_logic_i                                                                     |     0.026 |
+|     Inst_ConfRegister                                                              |     0.003 |
 |     corr_trig_gen                                                                  |    <0.001 |
-|     daq_manager_i                                                                  |     0.002 |
+|     daq_manager_i                                                                  |     0.001 |
 |       counter_gen[0].counter_i_x                                                   |    <0.001 |
 |       counter_gen[1].counter_i_x                                                   |    <0.001 |
 |       counter_gen[2].counter_i_x                                                   |    <0.001 |
@@ -695,7 +695,7 @@ Table of Contents
 |     trig_downscaler_gen[2].trig_downscaler                                         |    <0.001 |
 |     trig_downscaler_gen[3].trig_downscaler                                         |    <0.001 |
 |     trig_downscaler_gen[4].trig_downscaler                                         |    <0.001 |
-|     trig_downscaler_gen[5].trig_downscaler                                         |    <0.001 |
+|     trig_downscaler_gen[5].trig_downscaler                                         |     0.000 |
 |     trig_downscaler_gen[6].trig_downscaler                                         |    <0.001 |
 |     trig_downscaler_gen[7].trig_downscaler                                         |    <0.001 |
 |     trig_time_stamp_i                                                              |    <0.001 |
@@ -704,7 +704,7 @@ Table of Contents
 |     trig_zs_nzs_gen[2].nzs_zs_select                                               |    <0.001 |
 |     trig_zs_nzs_gen[3].nzs_zs_select                                               |    <0.001 |
 |     trig_zs_nzs_gen[4].nzs_zs_select                                               |    <0.001 |
-|     trig_zs_nzs_gen[5].nzs_zs_select                                               |    <0.001 |
+|     trig_zs_nzs_gen[5].nzs_zs_select                                               |     0.000 |
 |     trig_zs_nzs_gen[6].nzs_zs_select                                               |    <0.001 |
 |     trig_zs_nzs_gen[7].nzs_zs_select                                               |    <0.001 |
 |     trigger_masker_i                                                               |    <0.001 |

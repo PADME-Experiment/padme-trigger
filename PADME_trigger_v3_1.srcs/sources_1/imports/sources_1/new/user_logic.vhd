@@ -27,6 +27,7 @@ port(
   clk_ps_1MHz_in         : in  std_logic;
   rst_in                 : in  std_logic;
   trig_in                : in  std_logic_vector (Ntrig_in-1 downto 0);
+  sin_fb                 : in  std_logic;
   busy_in                : in  std_logic_vector (Nbusy_in-1 downto 0);
   trig_out               : out std_logic_vector (Ntrig_out-1 downto 0);
   busy_out               : out std_logic_vector (Nbusy_out-1 downto 0);
@@ -377,7 +378,11 @@ signal trig_nzs          : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
 signal trig_zs           : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
 signal timer_reset       : std_logic;
 signal trig_dead_time_veto : std_logic;
+signal sin_fb_r          : std_logic_vector(1 downto 0);
+signal sin_r             : std_logic_vector(7 downto 0);
+signal sin_int           : std_logic;
 signal trig              : std_logic_vector (Ntrig_out-1 downto 0);
+signal trig_nzs_zs_shaped: std_logic;
 signal trig_type         : std_logic;
 signal trig_map          : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
 signal trig_to_delay     : std_logic;
@@ -412,6 +417,7 @@ signal corr_trig_en         : std_logic;
 signal corr_trig_delay      : std_logic_vector(15 downto 0);
 signal corr_trig_dwnscalef  : std_logic_vector(7 downto 0);
 
+signal sin                  : std_logic;
 -- TimPix3
 signal shutter              : std_logic;
 signal tp3_shut_delay       : std_logic_vector(7 downto 0);
@@ -570,11 +576,18 @@ port map(
   dead_time_width => trig_dead_time,
   zs_in     => trig_zs,
   nzs_in    => trig_nzs,
-  trig_out  => trig(0),
+  -- out_alp 4-2-19
+  --trig_out  => trig(0),
+  -- in_alp: 4-2-19
+  trig_out  => trig_nzs_zs_shaped,
+  -- end_alp: 4-2-19
   trig_type => trig_type,
   trig_map  => trig_map,
   veto_out  => trig_dead_time_veto
 );
+-- in_alp: 4-2-19
+trig(0) <= trig_nzs_zs_shaped and not fifo_full and not rst;
+-- end_alp: 4-2-19
 trig(1) <= '0';
 trig(2) <= '0';
 
@@ -618,7 +631,25 @@ port map(
 --busy_int <= (fifo_full & busy_in) and busy_mask;
 -- busy2: TP3, busy3: MIMOSA
 busy_int <= (fifo_full & busy_in(busy_in'high downto 3) & (not busy_in(2)) & busy_in(1 downto 0)) and busy_mask;
-busy_out <= (0 => not run, others => busy);
+busy_out <= (0 => sin, others => busy);
+--sin <= run xor run_reg(0);-- 100 ns pulse to toggle the sin state in the sin distribution board --not run;
+sin_pr: process(rst,clk)
+begin
+  if rst='1' then
+    sin_int <= '0';
+    sin_r <= (others => '0');
+    sin_fb_r <= "00";
+  elsif clk'event and clk='1' then
+    sin_fb_r <= sin_fb_r(0) & sin_fb;
+    sin_r    <= sin_r(sin_r'high-1 downto 0) & sin_int;
+    sin_int <= '0';
+    if (run /= sin_fb_r(1)) and (sin='0') then
+      sin_int <= '1';
+    end if;
+  end if;
+end process;
+sin <= or_reduce(sin_r);
+
 -- Shutter1: TP3, shutter0: MIMOSA
 --shutter_out  <= (others => run);
 window_generator_i: window_generator
@@ -678,7 +709,11 @@ port map(
   full                   => fifo_full,
   empty                  => fifo_empty
 );
-fifo_wr_en <= time_stamp_v and not fifo_full and not rst;
+-- in_alp: 4-2-19
+fifo_wr_en <= time_stamp_v;
+-- out_alp: 4-2-19
+--fifo_wr_en <= time_stamp_v and not fifo_full and not rst;
+-- end_alp: 4-2-19
 --ff_reg(63 downto 56)   <= (56 => fifo_empty, others => '0');
 ff_reg(63 downto 57)   <= fifo_data_out(63 downto 57);
 ff_reg(56)             <= fifo_empty;
@@ -808,6 +843,7 @@ end if;
 end process;
 --rst_fifo          <= rw_reg(0);                                         rw_def(0)                                       <= '0';
 --timer_rst         <= rw_reg(4);                                         rw_def(4)                                       <= '0';
+timer_rst <= '0';
 --timer_veto        <= rw_reg(8);
 trig_dead_time <= rw_reg(31 downto 16); rw_def(31 downto 16) <= x"3E7F";
 
@@ -892,6 +928,7 @@ end generate;
 ro_reg (32*9+Nbusy_in    downto  32* 9)           <= busy_int;
 ro_reg (32*10+Ntrig_in+Ntrig_int-1 downto  32*10) <= trig_map;
 
-ro_reg (32*14-1 downto  32*13) <= x"0301_8B08";
+--ro_reg (32*14-1 downto  32*13) <= x"0301_8B08";
+ro_reg (32*14-1 downto  32*13) <= x"0302_9204";
 
 end architecture rtl;
