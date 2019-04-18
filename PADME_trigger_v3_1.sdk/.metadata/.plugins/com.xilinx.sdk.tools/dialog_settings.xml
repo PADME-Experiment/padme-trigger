@@ -8,5 +8,5 @@
 	<item value="false" key="top_hw_platform_0-blankCheck"/>
 	<item value="/home/alp/Documents/Xilinx/vivado17.4/PADME_trigger_v3_1/PADME_trigger_v3_1.sdk/padme_v3_FSBL/Debug/padme_v3_FSBL.elf" key="top_hw_platform_0-fsblFile"/>
 	<item value="pclnfftk1" key="top_hw_platform_0-target"/>
-	<item value="Platform Cable USB II 000015de79c801/2-xc7z010" key="top_hw_platform_0-device"/>
+	<item value="Auto Detect" key="top_hw_platform_0-device"/>
 </section>

@@ -368,6 +368,8 @@ constant Ntrig_int       : integer := 2;
 -- Signals
 ----
 signal trig_redge        : std_logic_vector (Ntrig_in downto 0);
+signal trig0_delay_taps  : std_logic_vector (255 downto 0);
+signal trig_dwnscl0      : std_logic;
 signal trig_mask_in_v    : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
 signal trig_masked       : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
 signal trig_mask_int     : std_logic_vector (Ntrig_int+Ntrig_in-1 downto 0);
@@ -439,6 +441,7 @@ signal rst_fifo          : std_logic;
 signal rst_fifo_from_daq_man : std_logic;
 signal fifo_is_rst       : std_logic;
 signal shaper_width      : std_logic_vector (Nshaper_width-1 downto 0);
+signal trig0_input_delay : std_logic_vector (7 downto 0);
 signal trig_mask         : std_logic_vector (Ntrig_in+Ntrig_int -1 downto 0);
 signal busy_mask         : std_logic_vector (Nbusy_in downto 0);
 signal timer_rst         : std_logic;
@@ -479,7 +482,21 @@ attribute MARK_DEBUG of time_stamp_v : signal is "TRUE";
 
 begin
 
+-- Dbg signal trigger_in
 trigger_in <= rand_trig & trig_in;
+
+-- v3_3: Brutally added in logic: BRAM usage much higher than logic
+trig0_delay_taps <= trig0_delay_taps(trig0_delay_taps'high-1 downto 0) & trig_dwnscl(0);
+dly_pr: process (clk) is
+begin
+if clk'event and clk='1' then
+  if rst = '1' then
+    trig_dwnscl0 <= '0';
+  else
+    trig_dwnscl0 <= trig0_delay_taps(conv_integer(unsigned(trig0_input_delay)));
+  end if;
+end if;
+end process;
 
 trigger_shaper_i: shaper
 generic map(
@@ -522,7 +539,9 @@ port map(
   rst                    => timer_reset,
   timer_count_in         => timer_count,
   timeout_count_in       => timeout_count,
-  start_in               => trig_dwnscl(0),
+  -- v3_3:
+  --start_in               => trig_dwnscl(0),
+  start_in               => trig_dwnscl0,
   done_out               => timer_veto
 );
 
@@ -532,7 +551,7 @@ trig_mask_veto <= ( 0 =>'0', others => timer_veto );
 
 
 -- Downscalers
-trig_downscaler_gen: for i in 0 to Ntrig_in + Ntrig_int-1 generate
+trig_downscaler_gen: for i in 1 to Ntrig_in + Ntrig_int-1 generate
   trig_downscaler: downscaler
   generic map(
     Ndownscale_factor     => 16
@@ -545,9 +564,25 @@ trig_downscaler_gen: for i in 0 to Ntrig_in + Ntrig_int-1 generate
     data_out               => trig_masked(i)--trig_dwnscl(i)
   );
 end generate;
+trig_masked(0) <= trig_mask_in_v(0);
 
 --ZS/NZS
-trig_zs_nzs_gen: for i in 0 to Ntrig_in + Ntrig_int-1 generate
+-- v3_3:
+nzs_zs_select0: nzs_zs_selector
+generic map(
+  Ndownscale_factor     => 16
+)
+port map(
+  rst => rst,
+  clk => clk,
+  nzs_downscale_factor_in => nzs_dwnscl_fact(0),
+  data_in => trig_dwnscl0,
+  zs_out  => trig_zs(0),
+  nzs_out => trig_nzs(0)
+);
+-- v3_3:
+--trig_zs_nzs_gen: for i in 0 to Ntrig_in + Ntrig_int-1 generate
+trig_zs_nzs_gen: for i in 1 to Ntrig_in + Ntrig_int-1 generate
   nzs_zs_select: nzs_zs_selector
   generic map(
     Ndownscale_factor     => 16
@@ -652,30 +687,39 @@ sin <= or_reduce(sin_r);
 
 -- Shutter1: TP3, shutter0: MIMOSA
 --shutter_out  <= (others => run);
-window_generator_i: window_generator
+TP3_shutter_window_generator_i: window_generator
 generic map(
-  Nrun_window            => 8
+  Nrun_window            => 8+3
 )
 port map(
   clk                    => clk,
   rst                    => rst,
-  width_in               => tp3_shut_width,
-  delay_in               => tp3_shut_delay,
-  start_in               => trig(0),
+  width_in(8+3-1 downto 3) => tp3_shut_width,
+  width_in(2 downto 0)       => "001",
+  delay_in(8+3-1 downto 8)   => "000",
+  delay_in(7 downto 0)       => tp3_shut_delay,
+  -- v3_3:
+  --start_in               => trig(0),
+  start_in               => trig_dwnscl(0),
   window_out             => shutter
 );
 shutter_out <= (others => (not shutter));
 -- trig2: TP3, trig1: MIMOSA
 trig_out(0) <= trig(0);
 trig_out(1) <= '0';
-trig_out(2) <= run and not and_reduce(run_reg);
+-- TP3 timer_reset:
+-- v3_3:
+--trig_out(2) <= run and not and_reduce(run_reg);
+trig_out(2) <= run and or_reduce(run_reg);
 tp3_proc: process(clk) is
 begin
 if clk'event and clk='1' then
   if rst = '1' then
     run_reg <= (others => '0');
   else
-    run_reg <= run & run_reg(run_reg'high downto 1);
+    -- v3_3:
+    --run_reg <= run & run_reg(run_reg'high downto 1);
+    run_reg <= trig_dwnscl(0) & run_reg(run_reg'high downto 1);
   end if;
 end if;
 end process;
@@ -861,9 +905,11 @@ run_width         <= rw_reg(32*2 + 2*S_AXI_DATA_WIDTH-1 downto 32*2 );  rw_def(3
 run_delay(3 downto 0) <= x"A";
 run_delay(run_delay'high downto 4) <= (others => '0'); 
 
+-- v3_3:
+trig0_input_delay <= rw_reg(32*4 + 31 downto 32*4 + 24 );  rw_def(32*4 + 31 downto 32*4 + 24 ) <= std_logic_vector(conv_unsigned(   126, 8 )); -- 1.6 us
 -- Added TimePix shutter def
-tp3_shut_delay    <= rw_reg(32*4 +  7 downto 32*4      );  rw_def(32*4 +  7 downto 32*4      ) <= std_logic_vector(conv_unsigned(  2, 8 )); -- 25ns
-tp3_shut_width    <= rw_reg(32*4 + 15 downto 32*4 + 8  );  rw_def(32*4 + 15 downto 32*4 + 8  ) <= std_logic_vector(conv_unsigned( 22, 8 )); -- 250 ns
+tp3_shut_delay    <= rw_reg(32*4 +  7 downto 32*4      );  rw_def(32*4 +  7 downto 32*4      ) <= std_logic_vector(conv_unsigned(   17, 8 )); -- 200ns
+tp3_shut_width    <= rw_reg(32*4 + 15 downto 32*4 + 8  );  rw_def(32*4 + 15 downto 32*4 + 8  ) <= std_logic_vector(conv_unsigned( 100, 8 )); -- 10 us
 
 timer_count       <= rw_reg(32*5 + S_AXI_DATA_WIDTH-1   downto 32*5 );  rw_def(32*5+ S_AXI_DATA_WIDTH-1   downto 32*5 ) <= timer_count_d;
 timeout_count     <= rw_reg(32*6 + S_AXI_DATA_WIDTH-1   downto 32*6 );  rw_def(32*6+ S_AXI_DATA_WIDTH-1   downto 32*6 ) <= timeout_count_d;
@@ -929,6 +975,6 @@ ro_reg (32*9+Nbusy_in    downto  32* 9)           <= busy_int;
 ro_reg (32*10+Ntrig_in+Ntrig_int-1 downto  32*10) <= trig_map;
 
 --ro_reg (32*14-1 downto  32*13) <= x"0301_8B08";
-ro_reg (32*14-1 downto  32*13) <= x"0302_9204";
+ro_reg (32*14-1 downto  32*13) <= x"0303_9305";
 
 end architecture rtl;

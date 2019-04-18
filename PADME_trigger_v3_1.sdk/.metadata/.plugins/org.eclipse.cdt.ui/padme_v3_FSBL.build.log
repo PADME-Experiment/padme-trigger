@@ -1,8 +1,8 @@
-18:36:04 **** Auto Build of configuration Debug for project padme_v3_FSBL ****
+12:06:11 **** Auto Build of configuration Debug for project padme_v3_FSBL ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for `main-build'.
 
-18:36:04 Build Finished (took 198ms)
+12:06:12 Build Finished (took 153ms)
 

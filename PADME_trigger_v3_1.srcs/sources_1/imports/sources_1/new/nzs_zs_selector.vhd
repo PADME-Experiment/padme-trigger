@@ -56,8 +56,27 @@ end if;
 end process;
 count <= ones when nzs_downscale_factor_in=zeros else count_reg + data_in;
 
-nzs_out  <= data_in      when count  = nzs_downscale_factor_r else '0';
-zs_out   <= data_in      when count /= nzs_downscale_factor_r else '0';
+-- v3_3, added delay for timing
+--nzs_out  <= data_in      when count  = nzs_downscale_factor_r else '0';
+--zs_out   <= data_in      when count /= nzs_downscale_factor_r else '0';
+out_pr: process (clk) is
+begin
+if clk'event and clk='1' then
+  if rst = '1' then
+    nzs_out   <= '0';
+    zs_out    <= '0';
+  else
+    nzs_out   <= '0';
+    zs_out    <= '0';
+    if count  = nzs_downscale_factor_r then
+      zs_out <= data_in;
+    end if;
+    if count /= nzs_downscale_factor_r then
+      zs_out <= data_in;
+    end if;
+  end if;
+end if;
+end process;
 
 
 end architecture behav;

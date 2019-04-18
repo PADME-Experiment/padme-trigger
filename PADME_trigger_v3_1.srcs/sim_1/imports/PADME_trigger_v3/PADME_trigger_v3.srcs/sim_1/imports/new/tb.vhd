@@ -264,7 +264,7 @@ begin
 --  end loop;
   while true loop
     trig_in(0) <= '1';
-    wait for 101 ns;
+    wait for 501 ns;
     trig_in(0) <= '0';
     --wait for 10 us;
     wait for 1500 us;
@@ -431,8 +431,8 @@ begin
   axi_read(31);
   report "   Read Reg 31: " & integer'image(to_integer(unsigned(axi_rx_data)));
  
- --Enable trig 0 
---axi_write(2, 500*(2**16)+255);
+ -- Enable trig 0 
+  axi_write(2, 500*(2**16)+255);
   
   -- Enable BTF trig and Correlated trigg, with about 1 ms delay (1.024 ms)
   axi_write( 2, (2**10-1)*2**16 + 2**7 + 1);
@@ -454,8 +454,8 @@ begin
   
   wait for 10 us;
   -- Stop of run
-  axi_write(0, 2);
-  wait for 10 us;
+  --axi_write(0, 2);
+  --wait for 10 us;
   
   
 --  --Read fifo with data
